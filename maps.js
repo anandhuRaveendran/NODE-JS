@@ -8,3 +8,5 @@ map.forEach(
         console.log(a+"="+b)
     }
 )
+console.log(map["age"]=map.get("age")+1)
+console.log(map)
