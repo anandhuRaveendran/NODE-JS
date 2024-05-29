@@ -2,7 +2,6 @@ const str = "word counter is a tool that helps you count the number of words and
 let wordfrequancy= new Map();
 let str1=str.replace(/[^a-zA-Z ]/g, "")
 let words = str1.split(" ")
-console.log(words)
 for(let ele of words){
 
     if(wordfrequancy.has(ele)){
