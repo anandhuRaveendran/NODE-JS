@@ -1,0 +1,13 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+#itemList{
+list-style: none;
+}
+#itemList li{
+padding: 8px;
+background-color: aliceblue;
+}
+#additemForm {
+    margin: 40px;
+}

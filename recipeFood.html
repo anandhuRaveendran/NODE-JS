@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
 </head>
 <body>
-    <h1>Food Recipe</h1>
+  <h1>Recipe Finder</h1>
+  <form id="ingredient-form">
+    <label for="ingredients">Enter Ingredients (comma separated):</label>
+    <input type="text" id="ingredients" name="ingredients" required>
+    <button type="submit">Search Recipes</button>
+  </form>
+
+  <h2>Recipes</h2>
+  <ul id="recipe-list"></ul>
+
+  <h2>Favorite Recipes</h2>
+  <ul id="favorite-list"></ul>
+
+  <h2>Add New Recipe</h2>
+  <form id="add-recipe-form">
+    <label for="recipe-name">Recipe Name:</label>
+    <input type="text" id="recipe-name" name="recipe-name" required>
+    <label for="recipe-ingredients">Ingredients (comma separated):</label>
+    <input type="text" id="recipe-ingredients" name="recipe-ingredients" required>
+    <label for="preparation-time">Preparation Time (minutes):</label>
+    <input type="number" id="preparation-time" name="preparation-time" required>
+    <label for="complexity">Complexity (1-5):</label>
+    <input type="number" id="complexity" name="complexity" required min="1" max="5">
+    <button type="submit">Add Recipe</button>
+  </form>
+
+  <script src="recipeFood.js"></script>
 </body>
 </html>
