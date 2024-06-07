@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="shoppingcart.js"></script>
+</head>
+<body>
+    <h1>SHOPPING CART</h1>
+    <div>
+        <p>ITEMS</p>
+        <label>Select Items</label>
+        <select style="width: 200px;margin-left: 15px;" id="items" name="Items">
+            <option value="Apple">Apple</option>
+            <option value="Orange">Orange</option>
+            <option value="Pineapple">Pineapple</option>
+            <option value="Grape">Grape</option>
+            <option value="Watermelon">Watermelon</option>
+        </select><br><br>
+        <label>Enter Quantity</label>
+        <input type="text" id="quantityInput" placeholder="quantity">
+        <button style="margin-left: 20px;" onclick="addToCart()">Add to Cart</button>
+    </div>
+    <div>
+        <h2>Cart</h2>
+        <table id="cart">
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+            </tr>
+        </table>
+        <p>Total Price: <span id="totalPrice">0.00</span></p>
+    </div>
+
+</body>
+</html>
